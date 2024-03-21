@@ -1,0 +1,223 @@
+<?xml version="1.0" ?>
+<sdf version='1.4'>
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://costa-gv</uri>
+      <name>costa-gv</name>
+      <pose>-2.49048 1.64389 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://armchair</uri>
+      <name>armchair</name>
+      <pose>-11.6106 0.839206 0 0 -0 1.54611</pose>
+    </include>
+
+    <include>
+      <uri>model://armchair</uri>
+      <name>armchair_0</name>
+      <pose>-10.9107 -0.5043 0 0 0 -1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://armchair</uri>
+      <name>armchair_1</name>
+      <pose>-4.46909 -5.22255 0 0 0 -0.790151</pose>
+    </include>
+
+    <include>
+      <uri>model://armchair</uri>
+      <name>armchair_2</name>
+      <pose>-5.89268 -5.74266 0 0 0 -2.32605</pose>
+    </include>
+
+    <include>
+      <uri>model://armchair</uri>
+      <name>armchair_3</name>
+      <pose>-8.73138 -5.20725 0 0 0 -0.842515</pose>
+    </include>
+
+    <include>
+      <uri>model://armchair</uri>
+      <name>armchair_4</name>
+      <pose>-10.0003 -5.64243 0 0 0 -2.58139</pose>
+    </include>
+
+
+    <include>
+      <uri>model://box</uri>
+      <name>box</name>
+      <pose>-11.5671 -0.102439 0.729473 0 -0 0.399654</pose>
+    </include>
+
+    <include>
+      <uri>model://box</uri>
+      <name>box_0</name>
+      <pose>-13.3849 -5.40263 0.739411 0 0 -0.134064</pose>
+    </include>
+
+    <include>
+      <uri>model://box</uri>
+      <name>box_1</name>
+      <pose>-9.59378 -5.00953 0.734111 0 0 -0.278177</pose>
+    </include>
+
+    <include>
+      <uri>model://box</uri>
+      <name>box_2</name>
+      <pose>-5.49064 -5.11976 0.733567 0 0 -0.272936</pose>
+    </include>
+
+    <include>
+      <uri>model://box</uri>
+      <name>box_7</name>
+      <pose>1.64518 -5.30645 0.735982 0 0 -0.134782</pose>
+    </include>
+
+    <include>
+      <uri>model://box</uri>
+      <name>box_8</name>
+      <pose>0.57989 -5.13902 0.737752 0 0 -0.462524</pose>
+    </include>
+
+    <include>
+      <uri>model://cake_showcase</uri>
+      <name>cake_showcase</name>
+      <pose>-8.92291 -2.13044 0.134828 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://cake_showcase</uri>
+      <name>cake_showcase_0</name>
+      <pose>-7.74809 -2.1255 0.137421 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://condiment</uri>
+      <name>condiment</name>
+      <pose>-4.28838 -4.95825 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://round_table</uri>
+      <name>round_table</name>
+      <pose>-11.881 -0.513155 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://round_table</uri>
+      <name>round_table_0</name>
+      <pose>-5.94403 -5.53801 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://round_table</uri>
+      <name>round_table_1</name>
+      <pose>-10.122 -5.51519 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://round_table</uri>
+      <name>square_table_1</name>
+      <pose>1.15332 -5.72138 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://round_table</uri>
+      <name>square_table_2</name>
+      <pose>-0.113999 -5.75072 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://round_table</uri>
+      <name>square_table_9</name>
+      <pose>-13.6668 -5.98492 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://wall_sofa</uri>
+      <name>wall_sofa_2</name>
+      <pose>1.21322 -6.60198 0 0 -0 3e-06</pose>
+    </include>
+
+    <include>
+      <uri>model://wall_sofa</uri>
+      <name>wall_sofa_8</name>
+      <pose>-0.046349 -6.60091 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop</uri>
+      <name>worktop</name>
+      <pose>-8.9976 -2.14541 -0.359998 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop</uri>
+      <name>worktop_0</name>
+      <pose>-6.54971 -2.18663 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop</uri>
+      <name>worktop_1</name>
+      <pose>-3.39688 -2.18571 0 0 -0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop</uri>
+      <name>worktop_3</name>
+      <pose>2.921 -1.17131 0 0 -0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop</uri>
+      <name>worktop_4</name>
+      <pose>2.90697 -2.01444 0 0 -0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop_aluminium</uri>
+      <name>worktop_aluminium</name>
+      <pose>-7.27074 2.05727 0 0 -0 3.14159</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop_aluminium</uri>
+      <name>worktop_aluminium_0</name>
+      <pose>-2.85234 2.06091 0 0 -0 3.14159</pose>
+    </include>
+
+
+
+    <include>
+      <uri>model://worktop_aluminium</uri>
+      <name>worktop_aluminium_1</name>
+      <pose>-0.444827 2.05744 0 0 -0 3.14159</pose>
+    </include>
+
+    <include>
+      <uri>model://worktop_aluminium</uri>
+      <name>worktop_aluminium_2</name>
+      <pose>1.95691 2.06585 0 0 0 -3.14159</pose>
+    </include>
+
+    <!-- Own physics settings to speed up simulation -->
+    <physics type='ode'>
+      <max_step_size>0.01</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>100</real_time_update_rate>
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+
+  </world>
+</sdf>

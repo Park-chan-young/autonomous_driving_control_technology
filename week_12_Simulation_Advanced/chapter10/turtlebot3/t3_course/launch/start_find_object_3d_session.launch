@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <arg name="camera_rgb_topic" default="camera/rgb/image_raw" />
+    <arg name="camera_depth_topic" default="camera/depth/image_raw" />
+    <arg name="camera_info_topic" default="camera/depth/camera_info" />
+
+    <node pkg="find_object_2d" type="find_object_2d" name="find_object_3d_node" output="screen">
+        <param name="gui" value="true" type="bool"/>
+        <param name="settings_path" value="/home/hwjoe/output/find_object_2d.ini" type="str"/>
+        <param name="subscribe_depth" value="true" type="bool"/>
+        <param name="session_path" value="/home/hwjoe/output/ball_session.bin" type="str"/>
+        <param name="objects_path" value="" type="str"/>
+        <param name="object_prefix" value="object" type="str"/>
+
+        <remap from="rgb/image_rect_color" to="$(arg camera_rgb_topic)" />
+        <remap from="depth_registered/camera_info" to="$(arg camera_info_topic)" />
+        <remap from="depth_registered/image_raw" to="$(arg camera_depth_topic)" />
+    </node>
+</launch>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+    <world name="default">
+        <!-- Ground Plane -->
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <model name="a_barrier">
+            <pose>-5 -5 0 0 0 0</pose>
+            <static>false</static>
+            <include>
+                <uri>model://construction_barrel</uri>
+            </include>
+
+            <!-- import plugin -->
+            <plugin name="a_model_plugin" filename="liba_model_plugin.so">
+                <linear_vel>3</linear_vel>
+                <iterations>3000</iterations>
+            </plugin>
+        </model>
+
+    </world>
+</sdf>

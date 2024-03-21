@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="laser_enabled" default="true"/>
+    <arg name="ur5_enabled" default="false"/>
+    <arg name="kinect_enabled" default="false"/>
+
+    <arg name="x" default="0.0" />
+    <arg name="y" default="0.0" />
+    <arg name="z" default="0.0" />
+    <arg name="roll" default="0.0"/>
+    <arg name="pitch" default="0.0"/>
+    <arg name="yaw" default="0.0"/>
+
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+    <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+    <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+    <arg name="x" value="$(arg x)" />
+    <arg name="y" value="$(arg y)" />
+    <arg name="z" value="$(arg z)" />
+    <arg name="roll" value="$(arg roll)"/>
+    <arg name="pitch" value="$(arg pitch)"/>
+    <arg name="yaw" value="$(arg yaw)" />
+  </include>
+
+</launch>

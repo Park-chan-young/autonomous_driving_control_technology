@@ -1,0 +1,4 @@
+<launch>
+  <node name="xycar_ultrasonic" pkg="xycar_ultrasonic" type="xycar_ultrasonic.py" output="screen"/>
+  <node name="my_ultra" pkg="my_ultra" type="ultra_scan.py" output="screen"/>
+</launch>

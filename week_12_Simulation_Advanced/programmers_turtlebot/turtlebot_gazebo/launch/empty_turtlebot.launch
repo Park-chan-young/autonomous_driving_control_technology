@@ -1,0 +1,7 @@
+<launch>
+  <!-- simulation -->
+  <include file="$(find gurdy_description)/launch/start_world.launch" />
+
+  <!-- robot -->
+  <include file="$(find tc_worlds_robots)/launch/spawn_turtlebot2.launch" />
+</launch>

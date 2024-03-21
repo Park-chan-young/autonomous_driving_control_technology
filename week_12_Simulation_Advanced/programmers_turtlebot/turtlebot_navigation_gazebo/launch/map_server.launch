@@ -1,0 +1,5 @@
+<launch>
+    <arg name="map_file" default="/home/hwjoe/sim_ws/src/programmers_turtlebot/turtlebot_navigation_gazebo/maps/playground.yaml"/>
+
+    <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)"/>
+</launch>

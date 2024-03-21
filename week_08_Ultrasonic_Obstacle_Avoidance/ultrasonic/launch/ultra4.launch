@@ -1,0 +1,4 @@
+<launch>
+  <node name="ultra4_pub" pkg="ultrasonic" type="ultra4_pub.py"/>
+  <node name="ultra4_sub" pkg="ultrasonic" type="ultra4_sub.py" output="screen"/>
+</launch>

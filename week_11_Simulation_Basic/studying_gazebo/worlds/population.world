@@ -1,0 +1,110 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+    <world name="default">
+
+        <!-- A global light source -->
+        <include>
+            <uri>model://sun</uri>
+        </include>
+
+        <!-- A ground plane -->
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+
+        <!-- Testing the automatic population of objects -->
+        <population name="barriers_population">
+            <model name="jersey_barrier_1">
+                <include>
+                    <static>true</static>
+                    <uri>model://jersey_barrier</uri>
+                </include>
+            </model>
+            <pose>2 20.3 0.3 0 0 0</pose>
+            <!-- 40 x 40 wall -->
+            <box>
+                <size>40 40 0.01</size>
+            </box>
+            <model_count>10</model_count>
+            <distribution>
+                <type>linear-x</type>
+            </distribution>
+        </population>
+
+        <population name="barriers_population">
+            <model name="jersey_barrier_2">
+                <include>
+                    <static>true</static>
+                    <uri>model://jersey_barrier</uri>
+                </include>
+            </model>
+            <pose>2 -20.3 0.3 0 0 0</pose>
+            <!-- 40 x 40 wall -->
+            <box>
+                <size>40 40 0.01</size>
+            </box>
+            <model_count>10</model_count>
+            <distribution>
+                <type>linear-x</type>
+            </distribution>
+        </population>
+
+        <population name="barriers_population">
+            <model name="jersey_barrier_3">
+                <include>
+                    <static>true</static>
+                    <uri>model://jersey_barrier</uri>
+                    <pose>0 0 0 0 0 1.57</pose>
+                </include>
+            </model>
+            <pose>20.3 2 0.3 0 0 0</pose>
+            <!-- 40 x 40 wall -->
+            <box>
+                <size>40 40 0.01</size>
+            </box>
+            <model_count>10</model_count>
+            <distribution>
+                <type>linear-y</type>
+            </distribution>
+        </population>
+
+        <population name="barriers_population">
+            <model name="jersey_barrier_4">
+                <include>
+                    <static>true</static>
+                    <uri>model://jersey_barrier</uri>
+                    <pose>0 0 0 0 0 1.57</pose>
+                </include>
+            </model>
+            <pose>-20.3 2 0.3 0 0 0</pose>
+            <!-- 40 x 40 wall -->
+            <box>
+                <size>40 40 0.01</size>
+            </box>
+            <model_count>10</model_count>
+            <distribution>
+                <type>linear-y</type>
+            </distribution>
+        </population>
+
+        <!-- Testing the automatic population of objects -->
+        <population name="construction_barrel_population">
+            <model name="construction_barrel">
+                <include>
+                    <static>false</static>
+                    <uri>model://construction_barrel</uri>
+                </include>
+            </model>
+            <pose>0 0 0.3 0 0 0</pose>
+            <!-- 30 x 30 size -->
+            <box>
+                <size>30 30 0.01</size>
+            </box>
+            <model_count>100</model_count>
+            <distribution>
+                <type>random</type>
+            </distribution>
+        </population>
+
+    </world>
+</sdf>

@@ -1,0 +1,14 @@
+<launch>
+
+    <arg name="rgb_image_topic" default="camera/rgb/image_raw"/>
+    <arg name="color_file_path" default="$(find blob_tracking)/color_files/colors.txt"/>
+
+    <param name="cmvision/color_file" type="string" value="$(arg color_file_path)"/>
+    <param name="cmvision/mean_shift_on" type="bool" value="false"/>
+    <param name="cmvision/debug_on" type="bool" value="true"/>
+    <param name="cmvision/spatial_radius_pix" type="int" value="2"/>
+    <param name="cmvision/color_radius_pix" type="int" value="40"/>
+
+    <node name="cmvision_node" pkg="cmvision" type="cmvision" args="image:=$(arg rgb_image_topic)" output="screen"/>
+
+</launch>

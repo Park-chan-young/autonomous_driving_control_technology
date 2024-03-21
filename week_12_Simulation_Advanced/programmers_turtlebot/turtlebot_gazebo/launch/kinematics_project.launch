@@ -1,0 +1,12 @@
+<launch>
+
+  <arg name="world"  default="small_office"/>
+
+  <!-- start up world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find turtlebot_gazebo)/worlds/$(arg world).world"/>
+  </include>
+
+  <!-- robot -->
+  <include file="$(find tc_worlds_robots)/launch/spawn_turtlebot2.launch" />
+</launch>
